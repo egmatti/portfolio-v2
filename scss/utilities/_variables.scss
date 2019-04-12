@@ -6,30 +6,35 @@
 
 // Color Descriptions
 
+$white: #ffffff;
+$black: #121212;
+$electric-blue: #009ACD;
+$aqua: #00CED1;
 
 // Color Functions
+
+$color-selection: rgba($electric-blue, 0.5);
 
 
 // FONTS
 
-// Font Stacks
-$font-stack: "Avenir Next", Helvetica, sans-serif;
-
-// Font Weights
-$font-weight-thin: 100;
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-medium: 600;
-$font-weight-bold: 700;
-$font-weight-extra-bold: 900;
+// Fonts
+$font-thin: "Metropolis Thin", Helvetica, sans-serif;
+$font-thin: "Metropolis Extra Light", Helvetica, sans-serif;
+$font-light: "Metropolis Light", Helvetica, sans-serif;
+$font-regular: "Metropolis Regular", Helvetica, sans-serif;
+$font-medium: "Metropolis Medium", Helvetica, sans-serif;
+$font-medium: "Metropolis Semi-Bold", Helvetica, sans-serif;
+$font-bold: "Metropolis Bold", Helvetica, sans-serif;
+$font-extra-bold: "Metropolis Extra Bold", Helvetica, sans-serif;
 
 // Font Sizes
-$base-font-size: 16px;
+$base-font-size: 24px;
 
 // Letter Spacing
 
 // Line Height
-$line-height-body-text: 2rem;
+$line-height-body-text: 1.33rem;
 
 
 // BORDERS

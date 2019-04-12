@@ -1,3 +1,35 @@
 // ==========================================
 // HOME PAGE
 // ==========================================
+
+.hero-section {
+  @include flexbox();
+  background: $black;
+  height: 700px;
+  width: 100%;
+}
+
+.hero-text {
+  width: 760px;
+
+  h1 {
+    color: $white;
+    margin: 0;
+  }
+
+  p {
+    color: $white;
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 40px;
+    width: 540px;
+  }
+}
+
+.hero-text__divider {
+  background: $aqua;
+  float: left;
+  height: 5px;
+  margin-top: 45px;
+  width: 175px;
+}
