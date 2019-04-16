@@ -8,12 +8,14 @@
 
 $white: #ffffff;
 $black: #121212;
-$electric-blue: #009ACD;
+$blue: #009ACD;
 $aqua: #00CED1;
 
 // Color Functions
 
-$color-selection: rgba($electric-blue, 0.5);
+$color-divider: $aqua;
+$color-nav: $blue;
+$color-selection: $blue;
 
 
 // FONTS
@@ -24,12 +26,12 @@ $font-thin: "Metropolis Extra Light", Helvetica, sans-serif;
 $font-light: "Metropolis Light", Helvetica, sans-serif;
 $font-regular: "Metropolis Regular", Helvetica, sans-serif;
 $font-medium: "Metropolis Medium", Helvetica, sans-serif;
-$font-medium: "Metropolis Semi-Bold", Helvetica, sans-serif;
+$font-semi-bold: "Metropolis Semi-Bold", Helvetica, sans-serif;
 $font-bold: "Metropolis Bold", Helvetica, sans-serif;
 $font-extra-bold: "Metropolis Extra Bold", Helvetica, sans-serif;
 
 // Font Sizes
-$base-font-size: 24px;
+$base-font-size: 22.5px;
 
 // Letter Spacing
 

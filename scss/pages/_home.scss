@@ -10,26 +10,39 @@
 }
 
 .hero-text {
-  width: 760px;
+  @include grid-parent();
+  grid-template-columns: 12.5% 12.5% 12.5% 3.125% 9.375% 12.5% 12.5% 12.5% 12.5%;
+  margin-top: -46px;
 
   h1 {
+    @include grid-child(3,8);
     color: $white;
     margin: 0;
   }
 
   p {
+    @include grid-child(5,8);
     color: $white;
-    display: inline-block;
-    margin-left: 45px;
+    float: right;
     margin-top: 40px;
-    width: 540px;
   }
 }
 
 .hero-text__divider {
-  background: $aqua;
+  @include grid-child(3,4);
+  background: $color-divider;
   float: left;
   height: 5px;
   margin-top: 45px;
-  width: 175px;
+}
+
+.featured-project-section {
+  @include grid-parent();
+}
+
+.featured-project-background {
+  @include gradient($blue, $aqua);
+  @include grid-child(2,8);
+  height: 700px;
+  margin-top: -140px;
 }

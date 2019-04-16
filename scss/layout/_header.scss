@@ -1,0 +1,38 @@
+// ==========================================
+// HEADER
+// ==========================================
+
+header {
+  @include flexbox($justify: space-between);
+  height: 54px;
+  margin: 40px 4.17% 0 4.17%;
+  max-width: 1320px;
+  position: absolute;
+  width: 91.66%;
+  z-index: 100;
+}
+
+.header-logo {
+  height: 54px;
+  object-fit: contain;
+}
+
+.header-nav {
+
+  a {
+    color: $color-nav;
+    display: inline-block;
+    text-transform: uppercase;
+
+    li {
+      font-family: $font-medium;
+      font-size: 0.75rem;
+      letter-spacing: 1.4765625px;
+      list-style-type: none;
+    }
+  }
+
+  a:not(:first-of-type) {
+    margin-left: 60px;
+  }
+}
