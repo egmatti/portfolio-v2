@@ -4,7 +4,7 @@
 
 * {
   font-family: $font-regular;
-  font-size: $base-font-size;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 
@@ -74,7 +74,7 @@ video {
 h1 {
   color: $black;
   font-family: $font-bold;
-  font-size: 2.33333rem;
+  font-size: 50px;
   margin: 0;
 }
 
@@ -83,6 +83,5 @@ h1 {
 
 p {
   font-family: $font-regular;
-  font-size: 1rem;
-  line-height: $line-height-body-text;
+  font-size: 22px;
 }

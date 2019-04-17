@@ -391,7 +391,7 @@ template {
 
 * {
   font-family: "Metropolis Regular", Helvetica, sans-serif;
-  font-size: 22.5px;
+  font-size: 20px;
   margin: 0;
   padding: 0; }
   * ::-moz-selection {
@@ -448,13 +448,12 @@ video {
 h1 {
   color: #121212;
   font-family: "Metropolis Bold", Helvetica, sans-serif;
-  font-size: 2.33333rem;
+  font-size: 50px;
   margin: 0; }
 
 p {
   font-family: "Metropolis Regular", Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.33rem; }
+  font-size: 22px; }
 
 /* Slider */
 .slick-slider {
@@ -701,26 +700,31 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  height: 54px;
-  margin: 40px 4.17% 0 4.17%;
+  height: 50px;
+  margin: 37.5px 4.17% 0 4.17%;
   max-width: 1320px;
   position: absolute;
   width: 91.66%;
   z-index: 100; }
 
 .header-logo {
-  height: 54px;
+  height: 50px;
   object-fit: contain; }
 
 .header-nav a {
+  border-bottom: 2.45px solid transparent;
   color: #009ACD;
   display: inline-block;
+  padding: 10px 0;
   text-transform: uppercase; }
   .header-nav a li {
     font-family: "Metropolis Medium", Helvetica, sans-serif;
-    font-size: 0.75rem;
+    font-size: 16px;
     letter-spacing: 1.4765625px;
     list-style-type: none; }
+.header-nav a:hover {
+  border-bottom: 2.45px solid #009ACD;
+  padding: 10px 0; }
 .header-nav a:not(:first-of-type) {
   margin-left: 60px; }
 
@@ -729,7 +733,7 @@ header {
   display: flex;
   justify-content: center;
   background: #121212;
-  height: 700px;
+  height: 675px;
   width: 100%; }
 
 .hero-text {
@@ -778,7 +782,54 @@ header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
-  height: 700px;
-  margin-top: -140px; }
+  height: 675px;
+  margin-top: -140px;
+  position: relative; }
+
+.featured-project-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 50; }
+
+.featured-project-name {
+  color: #ffffff;
+  font-family: "Metropolis Medium", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.75px;
+  margin-left: 90px;
+  text-transform: uppercase; }
+
+.featured-project-title {
+  color: #ffffff;
+  font-family: "Metropolis Bold", Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 45px 0 30px 135px;
+  width: 360px; }
+
+.featured-project-description {
+  color: #ffffff;
+  font-family: "Metropolis Regular", Helvetica, sans-serif;
+  font-size: 24px;
+  margin-left: 135px;
+  width: 360px; }
+
+.featured-project-button div {
+  background: #ffffff;
+  color: #009ACD;
+  display: inline-block;
+  font-family: "Metropolis Medium", Helvetica, sans-serif;
+  font-size: 24px;
+  margin: 60px 0 0 315px;
+  padding: 15px 30px; }
+
+.featured-project-image {
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 /*# sourceMappingURL=style.css.map */
