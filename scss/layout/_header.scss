@@ -4,7 +4,7 @@
 
 header {
   @include flexbox($justify: space-between);
-  height: 50px;
+  height: 56.7px;
   margin: 37.5px 4.17% 0 4.17%;
   max-width: 1320px;
   position: absolute;
@@ -13,14 +13,14 @@ header {
 }
 
 .header-logo {
-  height: 50px;
+  height: 56.7px;
   object-fit: contain;
 }
 
 .header-nav {
 
   a {
-    border-bottom: 2.45px solid transparent;
+    border-bottom: 2.52125px solid transparent;
     color: $color-nav;
     display: inline-block;
     padding: 10px 0;
@@ -28,14 +28,15 @@ header {
 
     li {
       font-family: $font-medium;
-      font-size: 16px;
-      letter-spacing: 1.4765625px;
+      font-size: 18px;
+      letter-spacing: 1.58px;
       list-style-type: none;
     }
   }
 
   a:hover {
-    border-bottom: 2.45px solid $color-nav;
+    border-bottom: 2.52125px solid $color-nav;
+    cursor: pointer;
     padding: 10px 0;
   }
 
