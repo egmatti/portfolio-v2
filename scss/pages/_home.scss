@@ -4,8 +4,12 @@
 
 .hero-section {
   @include flexbox();
-  background: $black;
-  height: 675px;
+  // background: $black;
+  background: url("../img/featured-project/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
   width: 100%;
 }
 
