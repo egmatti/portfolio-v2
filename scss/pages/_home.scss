@@ -64,15 +64,31 @@
 }
 
 .featured-project-section {
-  @include grid-parent();
+  width: 100%;
 }
 
-.featured-project-background {
-  @include gradient($blue, $aqua);
-  @include grid-child(2,8);
-  height: 675px;
-  margin-top: -137.5px;
+.featured-project-slider {
+  margin: -137.5px 12.5% 0 12.5%;
   position: relative;
+  width: 75%;
+}
+
+.featured-project {
+  height: 675px;
+  position: relative;
+  width: 100%;
+}
+
+#featured-project__konquer {
+  @include gradient($sky-blue, $aqua);
+}
+
+#featured-project__creation-flows {
+  @include gradient($red, $peach);
+}
+
+#featured-project__campaign-results {
+  @include gradient($royal-blue, $baby-blue);
 }
 
 .featured-project-text {
@@ -106,7 +122,7 @@
 .featured-project-button {
   div {
     background: $white;
-    color: $blue;
+    color: $sky-blue;
     display: inline-block;
     font-family: $font-medium;
     font-size: 21.6px;

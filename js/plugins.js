@@ -21,7 +21,5 @@
   }
 }());
 
-// Place any jQuery/helper plugins in here.
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script type="text/javascript" src="js/slick.js"></script>
+// Place any jQuery/helper plugins in here.
