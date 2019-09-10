@@ -571,8 +571,43 @@ header {
 
 .featured-project-slider {
   margin: -137.5px 12.5% 0 12.5%;
+  max-width: 1080px;
   position: relative;
   width: 75%; }
+
+.featured-project-slider .slick-prev {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  left: -30px;
+  outline-style: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 45.555%;
+  width: 60px;
+  z-index: 100; }
+  .featured-project-slider .slick-prev:before {
+    content: url("../img/home/featured-project/previous-arrow.svg");
+    cursor: pointer; }
+
+.featured-project-slider .slick-next {
+  align-items: stretch;
+  background: none;
+  border: none;
+  bottom: 45.555%;
+  height: 60px;
+  outline-style: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: -30px;
+  width: 60px;
+  z-index: 100; }
+  .featured-project-slider .slick-next:before {
+    content: url("../img/home/featured-project/next-arrow.svg");
+    cursor: pointer; }
 
 .featured-project {
   height: 675px;

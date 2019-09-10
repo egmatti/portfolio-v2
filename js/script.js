@@ -19,3 +19,6 @@ $(".featured-project-slider").slick({
  slidesToShow: 1,
  vertical: false
 });
+
+$(".slick-prev").html("");
+$(".slick-next").html("");
