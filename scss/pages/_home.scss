@@ -49,9 +49,11 @@
 
   p {
     @include grid-child(5,8);
-    color: $white;
+    color: rgba($white, 0.85);
     float: right;
-    margin-top: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -60,7 +62,7 @@
   background: $color-divider;
   float: left;
   height: 5px;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .featured-project-section {
@@ -84,7 +86,8 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
-  top: 45.555%;
+  top: 45%;
+  transform: scale(0.925);
   width: 60px;
   z-index: 100;
 
@@ -98,13 +101,14 @@
   align-items: stretch;
   background: none;
   border: none;
-  bottom: 45.555%;
+  bottom: 45%;
   height: 60px;
   outline-style: none;
   overflow: hidden;
   padding: 0;
   position: absolute;
   right: -30px;
+  transform: scale(0.925);
   width: 60px;
   z-index: 100;
 
@@ -115,21 +119,34 @@
 }
 
 .featured-project {
-  height: 675px;
+  @include box-shadow();
+  height: 650px;
   position: relative;
   width: 100%;
 }
 
 #featured-project__konquer {
   @include gradient($sky-blue, $aqua);
+
+  .featured-project-button {
+    color: $sky-blue;
+  }
 }
 
 #featured-project__creation-flows {
   @include gradient($red, $peach);
+
+  .featured-project-button {
+    color: $red;
+  }
 }
 
 #featured-project__campaign-results {
   @include gradient($royal-blue, $baby-blue);
+
+  .featured-project-button {
+    color: $royal-blue;
+  }
 }
 
 .featured-project-text {
@@ -138,10 +155,10 @@
 }
 
 .featured-project-name {
-  color: $white;
+  color: rgba($white, 0.85);
   font-family: $font-medium;
-  font-size: 18px;
-  letter-spacing: 1.58px;
+  font-size: 16px;
+  letter-spacing: 1.4px;
   margin-left: 90px;
   text-transform: uppercase;
 }
@@ -149,27 +166,20 @@
 .featured-project-title {
   @extend h3;
   color: $white;
-  margin: 45px 0 30px 135px;
+  margin: 34px 0 22px 135px;
   width: 360px;
 }
 
 .featured-project-description {
   @extend p;
-  color: $white;
+  color: rgba($white, 0.85);
   margin-left: 135px;
   width: 360px;
 }
 
 .featured-project-button {
-  div {
-    background: $white;
-    color: $sky-blue;
-    display: inline-block;
-    font-family: $font-medium;
-    font-size: 21.6px;
-    margin: 60px 0 0 315px;
-    padding: 12.5px 25px;
-  }
+  background: $white;
+  margin: 45px 0 0 360px;
 }
 
 .featured-project-image {
@@ -178,4 +188,13 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.about-section {
+  @include grid-parent();
+  margin: 127px 0;
+}
+
+.about-text {
+  @include grid-child(3,7);
 }

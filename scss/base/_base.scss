@@ -3,8 +3,6 @@
 // ==========================================
 
 * {
-  font-family: $font-regular;
-  font-size: 21.6px;
   margin: 0;
   padding: 0;
 
@@ -72,25 +70,26 @@ video {
 // HEADLINES
 
 h1 {
-  color: $black;
+  color: $color-headlines;
   font-family: $font-bold;
-  font-size: 50.4px;
+  font-size: 46px;
   line-height: 60px;
   margin: 0;
 }
 
 h3 {
-  color: $black;
+  color: $color-headlines;
   font-family: $font-bold;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 
 // BODY TEXT
 
 p {
+  color: $color-body-text;
   font-family: $font-regular;
-  font-size: 21.6px;
-  line-height: 29.36px;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }

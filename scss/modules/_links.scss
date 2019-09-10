@@ -5,3 +5,18 @@
 a {
   outline: none;
 }
+
+.text-link {
+  color: $color-text-link;
+  cursor: pointer;
+  display: block;
+  font-family: $font-medium;
+  font-size: $base-font-size;
+  margin-top: 22px;
+
+  &:after {
+    content: url('../img/text-link-arrow.svg');
+    margin-left: 11.25px;
+    position: absolute;
+  }
+}
