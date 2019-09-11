@@ -36,7 +36,7 @@
     color: $white !important;
 
     &:after {
-      content: url('../img/icons/text-link-arrow-white.svg') !important;
+      content: url('../img/icons/text-link-arrows/text-link-arrow-white.svg') !important;
       margin-left: 13.25px;
     }
   }
@@ -72,7 +72,7 @@
   color: $red;
 
   &:after {
-    content: url('../img/icons/text-link-arrow-red.svg');
+    content: url('../img/icons/text-link-arrows/text-link-arrow-red.svg');
   }
 }
 
@@ -89,7 +89,7 @@
   color: $royal-blue;
 
   &:after {
-    content: url('../img/icons/text-link-arrow-royal-blue.svg');
+    content: url('../img/icons/text-link-arrows/text-link-arrow-royal-blue.svg');
   }
 }
 
@@ -106,7 +106,7 @@
   color: $plum;
 
   &:after {
-    content: url('../img/icons/text-link-arrow-plum.svg');
+    content: url('../img/icons/text-link-arrows/text-link-arrow-plum.svg');
   }
 }
 
@@ -123,7 +123,7 @@
   color: $kelly-green;
 
   &:after {
-    content: url('../img/icons/text-link-arrow-kelly-green.svg');
+    content: url('../img/icons/text-link-arrows/text-link-arrow-kelly-green.svg');
   }
 }
 
@@ -140,7 +140,7 @@
   color: $burnt-orange;
 
   &:after {
-    content: url('../img/icons/text-link-arrow-burnt-orange.svg');
+    content: url('../img/icons/text-link-arrows/text-link-arrow-burnt-orange.svg');
   }
 }
 
@@ -157,6 +157,6 @@
   color: $sky-blue;
 
   &:after {
-    content: url('../img/icons/text-link-arrow-sky-blue.svg');
+    content: url('../img/icons/text-link-arrows/text-link-arrow-sky-blue.svg');
   }
 }

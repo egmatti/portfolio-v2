@@ -520,7 +520,7 @@ a {
   font-size: 18px;
   position: relative; }
   .text-link:after {
-    content: url("../img/icons/text-link-arrow.svg");
+    content: url("../img/icons/text-link-arrows/text-link-arrow.svg");
     margin-left: 11.25px;
     position: absolute;
     top: 1.25px; }
@@ -532,14 +532,44 @@ header {
   display: flex;
   justify-content: space-between;
   height: 50px;
-  margin: 37.5px 4.31% 0 3.82%;
-  max-width: 1322.93px;
+  margin: 37.5px 4.24% 0 4.24%;
+  max-width: 1317.888px;
   position: absolute;
-  width: 91.87%;
+  width: 91.52%;
   z-index: 100; }
 
 .header-logo {
   height: 50px;
+  object-fit: contain; }
+
+footer {
+  background: #121212;
+  height: 180px;
+  position: relative;
+  width: 100%;
+  z-index: 100; }
+
+.footer-logo {
+  height: 50px;
+  margin-left: 4.24%;
+  object-fit: contain;
+  position: absolute;
+  top: 36%; }
+
+.social-media-links {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 7.77%;
+  position: absolute;
+  right: 0; }
+
+.social-media-link {
+  cursor: pointer;
+  height: 30px;
+  margin-left: 40px;
   object-fit: contain; }
 
 .work-section .section-title {
@@ -572,7 +602,7 @@ header {
   .project:hover .project-link {
     color: #ffffff !important; }
     .project:hover .project-link:after {
-      content: url("../img/icons/text-link-arrow-white.svg") !important;
+      content: url("../img/icons/text-link-arrows/text-link-arrow-white.svg") !important;
       margin-left: 13.25px; }
 
 .project-text {
@@ -603,7 +633,7 @@ header {
 #project-one .project-link {
   color: #E84855; }
   #project-one .project-link:after {
-    content: url("../img/icons/text-link-arrow-red.svg"); }
+    content: url("../img/icons/text-link-arrows/text-link-arrow-red.svg"); }
 
 #project-two {
   -ms-grid-column: 4;
@@ -619,7 +649,7 @@ header {
 #project-two .project-link {
   color: #4357AD; }
   #project-two .project-link:after {
-    content: url("../img/icons/text-link-arrow-royal-blue.svg"); }
+    content: url("../img/icons/text-link-arrows/text-link-arrow-royal-blue.svg"); }
 
 #project-three {
   -ms-grid-column: 6;
@@ -635,7 +665,7 @@ header {
 #project-three .project-link {
   color: #963484; }
   #project-three .project-link:after {
-    content: url("../img/icons/text-link-arrow-plum.svg"); }
+    content: url("../img/icons/text-link-arrows/text-link-arrow-plum.svg"); }
 
 #project-four {
   -ms-grid-column: 2;
@@ -651,7 +681,7 @@ header {
 #project-four .project-link {
   color: #60D394; }
   #project-four .project-link:after {
-    content: url("../img/icons/text-link-arrow-kelly-green.svg"); }
+    content: url("../img/icons/text-link-arrows/text-link-arrow-kelly-green.svg"); }
 
 #project-five {
   -ms-grid-column: 4;
@@ -667,7 +697,7 @@ header {
 #project-five .project-link {
   color: #F06543; }
   #project-five .project-link:after {
-    content: url("../img/icons/text-link-arrow-burnt-orange.svg"); }
+    content: url("../img/icons/text-link-arrows/text-link-arrow-burnt-orange.svg"); }
 
 #project-six {
   -ms-grid-column: 6;
@@ -683,7 +713,7 @@ header {
 #project-six .project-link {
   color: #009ACD; }
   #project-six .project-link:after {
-    content: url("../img/icons/text-link-arrow-sky-blue.svg"); }
+    content: url("../img/icons/text-link-arrows/text-link-arrow-sky-blue.svg"); }
 
 .hero-background {
   bottom: 0;
