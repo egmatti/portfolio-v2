@@ -4,6 +4,7 @@
 
 .button {
   @include box-shadow($c: rgba($black, 0.1));
+  border-radius: 3px;
   cursor: pointer;
   display: inline-block;
   font-family: $font-medium;

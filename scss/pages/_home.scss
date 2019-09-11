@@ -4,6 +4,8 @@
 
 .hero-background {
   bottom: 0;
+  -webkit-clip-path: ellipse(87.5% 50% at 50% 40%);
+  clip-path: ellipse(92.5% 50% at 50% 40%);
   height: 700px;
   left: 0;
   overflow: hidden;
@@ -33,6 +35,7 @@
 .hero-section {
   @include flexbox();
   height: 700px;
+  position: relative;
   width: 100%;
 }
 
@@ -49,7 +52,7 @@
 
   p {
     @include grid-child(5,8);
-    color: rgba($white, 0.85);
+    color: $white;
     float: right;
     font-size: 20px;
     line-height: 30px;
@@ -65,12 +68,27 @@
   margin-top: 35px;
 }
 
+.smooth-scrolling-button {
+  // @include box-shadow($c: rgba($black, 0.1));
+  bottom: 5%;
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 100;
+
+  &:hover {
+    // @include box-shadow($c: rgba($black, 0.25));
+  }
+}
+
 .featured-project-section {
   width: 100%;
 }
 
 .featured-project-slider {
-  margin: -137.5px 12.5% 0 12.5%;
+  @include box-shadow();
+  margin: 60px 12.5% 0 12.5%;
   max-width: 1080px;
   position: relative;
   width: 75%;
@@ -119,7 +137,6 @@
 }
 
 .featured-project {
-  @include box-shadow();
   height: 650px;
   position: relative;
   width: 100%;
@@ -155,7 +172,7 @@
 }
 
 .featured-project-name {
-  color: rgba($white, 0.85);
+  color: $white;
   font-family: $font-medium;
   font-size: 16px;
   letter-spacing: 1.4px;
@@ -172,7 +189,7 @@
 
 .featured-project-description {
   @extend p;
-  color: rgba($white, 0.85);
+  color: $white;
   margin-left: 135px;
   width: 360px;
 }
@@ -192,7 +209,7 @@
 
 .about-section {
   @include grid-parent();
-  margin: 127px 0;
+  margin: 135px 0;
 }
 
 .about-text {

@@ -1,0 +1,18 @@
+// ==========================================
+// PROJECT GRID
+// ==========================================
+
+.work-section {
+  h2 {
+    margin-left: 12.5%;
+  }
+}
+
+.projects-grid {
+  @include grid-parent();
+}
+
+.project-one {
+  @include gradient($red, $peach);
+  @include grid-child(2,4);
+}
