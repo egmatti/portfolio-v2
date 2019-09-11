@@ -173,22 +173,16 @@
 
 .featured-project-name {
   color: $white;
-  font-family: $font-medium;
-  font-size: 16px;
-  letter-spacing: 1.4px;
   margin-left: 90px;
-  text-transform: uppercase;
 }
 
 .featured-project-title {
-  @extend h3;
   color: $white;
   margin: 34px 0 22px 135px;
   width: 360px;
 }
 
 .featured-project-description {
-  @extend p;
   color: $white;
   margin-left: 135px;
   width: 360px;
@@ -216,6 +210,10 @@
   @include grid-child(3,7);
 }
 
+.about-text .text-link {
+  margin-top: 22px;
+}
+
 .contact-section {
   @include grid-parent();
   margin: 135px 0;
@@ -224,8 +222,12 @@
 .contact-text {
   @include grid-child(3,7);
 
-  h3 {
+  h4 {
     line-height: normal;
     margin-bottom: 22px;
   }
+}
+
+.contact-text .text-link {
+  margin-top: 22px;
 }

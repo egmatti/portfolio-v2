@@ -12,11 +12,10 @@ a {
   display: block;
   font-family: $font-medium;
   font-size: $base-font-size;
-  margin-top: 22px;
   position: relative;
 
   &:after {
-    content: url('../img/text-link-arrow.svg');
+    content: url('../img/icons/text-link-arrow.svg');
     margin-left: 11.25px;
     position: absolute;
     top: 1.25px;

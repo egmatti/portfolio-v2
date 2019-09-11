@@ -72,8 +72,8 @@ video {
 h1 {
   color: $color-headline;
   font-family: $font-bold;
-  font-size: 46px;
-  line-height: 60px;
+  font-size: 48px;
+  line-height: 64px;
   margin: 0;
 }
 
@@ -81,9 +81,17 @@ h2 {
   color: $color-headline;
   font-family: $font-bold;
   font-size: 36px;
+  line-height: 48px;
 }
 
 h3 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 33px;
+  line-height: 44px;
+}
+
+h4 {
   color: $color-headline;
   font-family: $font-bold;
   font-size: 30px;
