@@ -572,7 +572,7 @@ header {
   .project:hover .project-link {
     color: #ffffff !important; }
     .project:hover .project-link:after {
-      content: url("../img/icons/text-link-arrow-white.svg");
+      content: url("../img/icons/text-link-arrow-white.svg") !important;
       margin-left: 13.25px; }
 
 .project-text {
@@ -603,7 +603,7 @@ header {
 #project-one .project-link {
   color: #E84855; }
   #project-one .project-link:after {
-    content: url("../img/icons/text-link-arrow-white.svg"); }
+    content: url("../img/icons/text-link-arrow-red.svg"); }
 
 #project-two {
   -ms-grid-column: 4;
@@ -619,7 +619,7 @@ header {
 #project-two .project-link {
   color: #4357AD; }
   #project-two .project-link:after {
-    content: url("../img/icons/text-link-arrow-white.svg"); }
+    content: url("../img/icons/text-link-arrow-royal-blue.svg"); }
 
 #project-three {
   -ms-grid-column: 6;
@@ -635,7 +635,7 @@ header {
 #project-three .project-link {
   color: #963484; }
   #project-three .project-link:after {
-    content: url("../img/icons/text-link-arrow-white.svg"); }
+    content: url("../img/icons/text-link-arrow-plum.svg"); }
 
 #project-four {
   -ms-grid-column: 2;
@@ -651,7 +651,7 @@ header {
 #project-four .project-link {
   color: #60D394; }
   #project-four .project-link:after {
-    content: url("../img/icons/text-link-arrow-white.svg"); }
+    content: url("../img/icons/text-link-arrow-kelly-green.svg"); }
 
 #project-five {
   -ms-grid-column: 4;
@@ -667,7 +667,7 @@ header {
 #project-five .project-link {
   color: #F06543; }
   #project-five .project-link:after {
-    content: url("../img/icons/text-link-arrow-white.svg"); }
+    content: url("../img/icons/text-link-arrow-burnt-orange.svg"); }
 
 #project-six {
   -ms-grid-column: 6;
@@ -683,7 +683,7 @@ header {
 #project-six .project-link {
   color: #009ACD; }
   #project-six .project-link:after {
-    content: url("../img/icons/text-link-arrow-white.svg"); }
+    content: url("../img/icons/text-link-arrow-sky-blue.svg"); }
 
 .hero-background {
   bottom: 0;
