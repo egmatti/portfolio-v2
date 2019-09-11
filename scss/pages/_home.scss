@@ -137,7 +137,7 @@
 }
 
 .featured-project {
-  height: 650px;
+  height: 630px;
   position: relative;
   width: 100%;
 }
@@ -214,4 +214,18 @@
 
 .about-text {
   @include grid-child(3,7);
+}
+
+.contact-section {
+  @include grid-parent();
+  margin: 135px 0;
+}
+
+.contact-text {
+  @include grid-child(3,7);
+
+  h3 {
+    line-height: normal;
+    margin-bottom: 22px;
+  }
 }

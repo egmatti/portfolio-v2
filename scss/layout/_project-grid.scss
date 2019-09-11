@@ -10,9 +10,43 @@
 
 .projects-grid {
   @include grid-parent();
+  grid-template-rows: repeat(2, 50%);
+  height: 720px;
+  margin-top: 60px;
 }
 
 .project-one {
   @include gradient($red, $peach);
   @include grid-child(2,4);
+  grid-row: 1/2;
+}
+
+.project-two {
+  @include gradient($royal-blue, $baby-blue);
+  @include grid-child(4,6);
+  grid-row: 1/2;
+}
+
+.project-three {
+  @include gradient($plum, $lavender);
+  @include grid-child(6,8);
+  grid-row: 1/2;
+}
+
+.project-four {
+  @include gradient($kelly-green, $lime-green);
+  @include grid-child(2,4);
+  grid-row: 2/3;
+}
+
+.project-five {
+  @include gradient($burnt-orange, $tangerine);
+  @include grid-child(4,6);
+  grid-row: 2/3;
+}
+
+.project-six {
+  @include gradient($sky-blue, $aqua);
+  @include grid-child(6,8);
+  grid-row: 2/3;
 }
