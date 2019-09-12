@@ -1,5 +1,5 @@
 // ==========================================
-// PROJECT GRID
+// WORK SECTION
 // ==========================================
 
 .work-section {
@@ -17,6 +17,10 @@
   grid-template-rows: repeat(2, 50%);
   height: 720px;
   margin-top: 60px;
+}
+
+.projects-grid a {
+  text-decoration: none;
 }
 
 .project {

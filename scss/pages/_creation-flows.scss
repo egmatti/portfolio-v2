@@ -1,0 +1,39 @@
+// ==========================================
+// CREATION FLOWS PROJECT PAGE
+// ==========================================
+
+#creation-flows-page .hero-background {
+  @include gradient($red, $peach);
+}
+
+.project-page .hero-section {
+  height: 700px;
+  width: 100%;
+}
+
+.project-page .hero-text {
+  @include grid-parent();
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin-top: 75px;
+  width: 100%;
+}
+
+.project-page .project-name {
+  @include grid-child(3,6);
+  color: $white;
+  font-size: 21px;
+}
+
+.project-page .project-title {
+  @include grid-child(4,8);
+  color: $white;
+  margin: 36px 0 75px 0;
+}
+
+.project-page .project-image {
+  @include grid-child(2,10);
+  max-width: 1080px;
+  object-fit: contain;
+  transform: scale(1.0525);
+  width: 100%;
+}

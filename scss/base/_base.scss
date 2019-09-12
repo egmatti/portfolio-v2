@@ -18,12 +18,12 @@
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 audio,
@@ -32,7 +32,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .hidden {
@@ -80,18 +80,26 @@ h1 {
 h2 {
   color: $color-headline;
   font-family: $font-bold;
+  font-size: 42px;
+  line-height: 56px;
+  margin: 0;
+}
+
+h3 {
+  color: $color-headline;
+  font-family: $font-bold;
   font-size: 36px;
   line-height: 48px;
 }
 
-h3 {
+h4 {
   color: $color-headline;
   font-family: $font-bold;
   font-size: 33px;
   line-height: 44px;
 }
 
-h4 {
+h5 {
   color: $color-headline;
   font-family: $font-bold;
   font-size: 30px;
