@@ -7,7 +7,7 @@
 }
 
 .project-page .hero-section {
-  height: 700px;
+  height: auto;
   width: 100%;
 }
 
@@ -22,18 +22,99 @@
   @include grid-child(3,6);
   color: $white;
   font-size: 21px;
+  letter-spacing: 1.8375px;
 }
 
 .project-page .project-title {
   @include grid-child(4,8);
   color: $white;
-  margin: 36px 0 75px 0;
+  margin: 32.25px 0 56.25px 0;
 }
 
-.project-page .project-image {
+.project-page .project-hero-image {
   @include grid-child(2,10);
   max-width: 1080px;
   object-fit: contain;
-  transform: scale(1.0525);
+  // transform: scale(1.0525);
+  width: 100%;
+}
+
+.project-page .project-section  {
+  margin-top: 135px;
+  width: 100%;
+}
+
+.project-page .background-section {
+  position: relative;
+}
+
+.project-page .project-section-text {
+  @include grid-parent();
+}
+
+.project-page .section-name {
+  @include grid-child(2,7);
+  @extend .project-name;
+  color: $medium-gray;
+  font-size: 20px;
+  letter-spacing: 1.75px;
+}
+
+.project-page .section-title {
+  @include grid-child(2,7);
+  margin: 33.75px 0 45px 0;
+}
+
+.project-page .project-section-text p {
+  @include grid-child(3,7);
+}
+
+.project-page .project-role {
+   @include grid-child(7,9);
+   left: 75%;
+   position: absolute;
+   top: 0;
+
+   @include e(label) {
+     display: block;
+     font-family: $font-medium;
+     font-size: 16px;
+     letter-spacing: 1.4px;
+     margin-bottom: 16.875px;
+     text-transform: uppercase;
+   }
+
+   @include e(description) {
+     @extend p;
+     display: block;
+     font-size: 16px;
+     line-height: 24px;
+   }
+}
+
+#creation-flows-page .project-role__label {
+   color: $red;
+}
+
+.project-page figure {
+  @include grid-parent();
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin: 90px 0;
+
+  figcaption {
+    @include grid-child(3,9);
+    @extend p;
+    display: block;
+    font-size: 14px;
+    margin-top: 33.75px;
+    text-align: center;
+  }
+}
+
+.project-page .project-image--medium {
+  @include grid-child(3,9);
+  display: block;
+  max-width: 1080px;
+  object-fit: contain;
   width: 100%;
 }

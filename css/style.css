@@ -474,7 +474,7 @@ h5 {
   font-size: 30px;
   line-height: 40px; }
 
-p {
+p, .project-page .project-role__description, .project-page figure figcaption {
   color: #484848;
   font-family: "Metropolis Regular", Helvetica, sans-serif;
   font-size: 18px;
@@ -661,7 +661,7 @@ footer {
     -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
     -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
     box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25); }
-  .project:hover .project-name {
+  .project:hover .project-name, .project:hover .project-page .section-name, .project-page .project:hover .section-name {
     color: #ffffff; }
   .project:hover .project-title {
     color: #ffffff; }
@@ -674,7 +674,7 @@ footer {
 .project-text {
   margin: 0 45px; }
 
-.project-name {
+.project-name, .project-page .section-name {
   color: #898989;
   font-family: "Metropolis Medium", Helvetica, sans-serif;
   font-size: 16px;
@@ -872,7 +872,7 @@ footer {
 
 .featured-project-title {
   color: #ffffff;
-  margin: 34px 0 22px 135px;
+  margin: 33.75px 0 22.5px 135px;
   width: 360px; }
 
 .featured-project-description {
@@ -932,7 +932,7 @@ footer {
     grid-column: 3/8;
     color: #ffffff;
     margin: 0; }
-  #home-page .hero-text p {
+  #home-page .hero-text p, #home-page .hero-text .project-page .project-role__description, .project-page #home-page .hero-text .project-role__description, #home-page .hero-text .project-page figure figcaption, .project-page figure #home-page .hero-text figcaption {
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-column: 5/8;
@@ -982,7 +982,7 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
 .project-page .hero-section {
-  height: 700px;
+  height: auto;
   width: 100%; }
 
 .project-page .hero-text {
@@ -995,27 +995,108 @@ footer {
   margin-top: 75px;
   width: 100%; }
 
-.project-page .project-name {
+.project-page .project-name, .project-page .section-name {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
   color: #ffffff;
-  font-size: 21px; }
+  font-size: 21px;
+  letter-spacing: 1.8375px; }
 
 .project-page .project-title {
   -ms-grid-column: 4;
   -ms-grid-column-span: 4;
   grid-column: 4/8;
   color: #ffffff;
-  margin: 36px 0 75px 0; }
+  margin: 32.25px 0 56.25px 0; }
 
-.project-page .project-image {
+.project-page .project-hero-image {
   -ms-grid-column: 2;
   -ms-grid-column-span: 8;
   grid-column: 2/10;
   max-width: 1080px;
   object-fit: contain;
-  transform: scale(1.0525);
+  width: 100%; }
+
+.project-page .project-section {
+  margin-top: 135px;
+  width: 100%; }
+
+.project-page .background-section {
+  position: relative; }
+
+.project-page .project-section-text {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  max-width: 1440px;
+  width: 100%; }
+
+.project-page .section-name {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  color: #898989;
+  font-size: 20px;
+  letter-spacing: 1.75px; }
+
+.project-page .section-title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  margin: 33.75px 0 45px 0; }
+
+.project-page .project-section-text p, .project-page .project-section-text .project-role__description, .project-page .project-section-text figure figcaption, .project-page figure .project-section-text figcaption {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7; }
+
+.project-page .project-role {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-column: 7/9;
+  left: 75%;
+  position: absolute;
+  top: 0; }
+  .project-page .project-role__label {
+    display: block;
+    font-family: "Metropolis Medium", Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.4px;
+    margin-bottom: 16.875px;
+    text-transform: uppercase; }
+  .project-page .project-role__description {
+    display: block;
+    font-size: 16px;
+    line-height: 24px; }
+
+#creation-flows-page .project-role__label {
+  color: #E84855; }
+
+.project-page figure {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  max-width: 1440px;
+  width: 100%;
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin: 90px 0; }
+  .project-page figure figcaption {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 6;
+    grid-column: 3/9;
+    display: block;
+    font-size: 14px;
+    margin-top: 33.75px;
+    text-align: center; }
+
+.project-page .project-image--medium {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-column: 3/9;
+  display: block;
+  max-width: 1080px;
+  object-fit: contain;
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
