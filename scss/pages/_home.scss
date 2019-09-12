@@ -203,7 +203,7 @@
 
 .about-section {
   @include grid-parent();
-  margin: 135px 0;
+  margin-top: 135px;
 }
 
 .about-text {
@@ -216,7 +216,7 @@
 
 .contact-section {
   @include grid-parent();
-  margin: 135px 0;
+  margin-bottom: 135px;
 }
 
 .contact-text {

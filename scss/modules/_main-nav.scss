@@ -5,11 +5,12 @@
 .main-nav {
 
   a {
-    border-bottom: 2.5px solid transparent;
+    border-bottom: solid 2.5px transparent;
     color: $color-nav;
     display: inline-block;
     padding: 8px 0;
     text-transform: uppercase;
+    text-decoration: none;
 
     li {
       font-family: $font-medium;
@@ -20,7 +21,7 @@
   }
 
   a:hover {
-    border-bottom: 2.5px solid $color-nav;
+    color: $color-nav--hover;
     cursor: pointer;
     padding: 8px 0;
   }
@@ -28,4 +29,9 @@
   a:not(:first-of-type) {
     margin-left: 60px;
   }
+}
+
+#work-page #main-nav__work {
+  border-bottom: solid 2.5px $color-nav--hover;
+  color: $color-nav--hover;
 }

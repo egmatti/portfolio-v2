@@ -7,9 +7,13 @@ header {
   height: 50px;
   margin: 37.5px 4.24% 0 4.24%;
   max-width: 1317.888px;
-  position: absolute;
+  position: relative;
   width: 91.52%;
   z-index: 100;
+}
+
+#home-page header {
+  position: absolute;
 }
 
 .header-logo {

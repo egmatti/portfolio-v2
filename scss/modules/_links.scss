@@ -21,7 +21,12 @@ a {
     top: 1.25px;
   }
 
+  &:hover {
+    color: $color-text-link--hover;
+  }
+
   &:hover:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-darkened.svg');
     margin-left: 13.25px;
   }
 }

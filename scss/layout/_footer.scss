@@ -30,4 +30,8 @@ footer {
   height: 30px;
   margin-left: 40px;
   object-fit: contain;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
