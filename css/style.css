@@ -474,6 +474,12 @@ h5 {
   font-size: 30px;
   line-height: 40px; }
 
+h6 {
+  color: #121212;
+  font-family: "Metropolis Bold", Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 28px; }
+
 p, .project-page .project-role__description, .project-page figure figcaption {
   color: #484848;
   font-family: "Metropolis Regular", Helvetica, sans-serif;
@@ -830,7 +836,7 @@ footer {
     cursor: pointer; }
 
 .featured-project {
-  height: 630px;
+  height: 650px;
   position: relative;
   width: 100%; }
 
@@ -1091,12 +1097,81 @@ footer {
     text-align: center; }
 
 .project-page .project-image--medium {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 6;
-  grid-column: 3/9;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+  box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
   display: block;
   max-width: 1080px;
   object-fit: contain;
   width: 100%; }
+
+blockquote {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  max-width: 1440px;
+  width: 100%;
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin: 67.5px 0; }
+  blockquote:before {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    content: url("../img/icons/quotation-mark.svg");
+    margin-top: -10px;
+    text-align: center; }
+  blockquote p, blockquote .project-page .project-role__description, .project-page blockquote .project-role__description, blockquote .project-page figure figcaption, .project-page figure blockquote figcaption {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4/8;
+    color: #121212;
+    font-family: "Metropolis Bold", Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 28.7px;
+    margin-bottom: 22px; }
+  blockquote span {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4/8;
+    font-family: "Metropolis Medium", Helvetica, sans-serif;
+    font-size: 13.5px;
+    letter-spacing: 1.2;
+    margin-left: 20px;
+    text-transform: uppercase; }
+
+#creation-flows-page blockquote span {
+  color: #E84855; }
+
+.project-page .process-section .section-title {
+  margin: 33.75px 0 67.5px 0; }
+
+.project-page .project-subsection-text {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  max-width: 1440px;
+  width: 100%;
+  position: relative; }
+
+.project-page .project-subsection-one:before {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  content: url("../img/projects/subsection-numbers/subsection-one.svg");
+  position: absolute; }
+
+.project-page .subsection-name {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+  margin-bottom: 33.75px; }
+
+.project-page .project-subsection-text p, .project-page .project-subsection-text .project-role__description, .project-page .project-subsection-text figure figcaption, .project-page figure .project-subsection-text figcaption {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7; }
 
 /*# sourceMappingURL=style.css.map */
