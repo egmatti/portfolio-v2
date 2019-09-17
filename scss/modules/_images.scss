@@ -1,0 +1,74 @@
+// ==========================================
+// IMAGES
+// ==========================================
+
+.project-page .project-image--medium-width {
+  @include grid-parent();
+  margin: 90px 0;
+
+  img {
+    @include box-shadow();
+    @include grid-child(2,8);
+    display: block;
+    max-width: 1080px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  figcaption {
+    @include grid-child(3,7);
+    @extend p;
+    display: block;
+    font-size: 14px;
+    margin-top: 33.75px;
+    text-align: center;
+  }
+}
+
+.project-page .project-image--full-width {
+  background: $color-full-width-image-background;
+  box-sizing: border-box;
+  height: auto;
+  margin: 90px 0;
+  padding: 67.5px 45px 56.25px 45px;
+  width: 100%;
+
+  h6 {
+    margin-bottom: 45px;
+  }
+
+  figcaption {
+    @extend p;
+    display: block;
+    font-size: 14px;
+    margin-top: 33.75px;
+    text-align: center;
+  }
+}
+
+.project-page .heuristic-evaluation {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  @include m(screenshot) {
+    @include box-shadow();
+    object-fit: contain;
+    width: 60%;
+  }
+
+  @include m(comments) {
+    object-fit: contain;
+    width: 35%;
+  }
+}
+
+.project-page .two-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 48%;
+  }
+}

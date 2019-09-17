@@ -96,61 +96,6 @@
    color: $red;
 }
 
-.project-page figure {
-  @include grid-parent();
-  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
-  margin: 90px 0;
-
-  figcaption {
-    @include grid-child(3,9);
-    @extend p;
-    display: block;
-    font-size: 14px;
-    margin-top: 33.75px;
-    text-align: center;
-  }
-}
-
-.project-page .project-image--medium {
-  @include box-shadow();
-  @include grid-child(2,10);
-  display: block;
-  max-width: 1080px;
-  object-fit: contain;
-  width: 100%;
-}
-
-blockquote {
-  @include grid-parent();
-  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
-  margin: 67.5px 0;
-
-  &:before {
-    @include grid-child(3,4);
-    content: url('../img/icons/quotation-mark.svg');
-    margin-top: -10px;
-    text-align: center;
-  }
-
-  p {
-    @include grid-child(4,8);
-    color: $black;
-    font-family: $font-bold;
-    font-size: 21px;
-    line-height: 28.7px;
-    margin-bottom: 22px;
-  }
-
-  span {
-    @include grid-child(4,8);
-    font-family: $font-medium;
-    font-size: 13.5px;
-    letter-spacing: 1.2;
-    margin-left: 20px;
-    text-transform: uppercase;
-  }
-}
-
 #creation-flows-page blockquote span {
   color: $red;
 }
@@ -170,6 +115,24 @@ blockquote {
   position: absolute;
 }
 
+.project-page .project-subsection-two:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-two.svg');
+  position: absolute;
+}
+
+.project-page .project-subsection-three:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-three.svg');
+  position: absolute;
+}
+
+.project-page .project-subsection-four:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-four.svg');
+  position: absolute;
+}
+
 .project-page .subsection-name {
   @include grid-child(3,7);
   margin-bottom: 33.75px;
@@ -177,4 +140,38 @@ blockquote {
 
 .project-page .project-subsection-text p {
   @include grid-child(3,7);
+}
+
+.project-page .project-subsection-text ol {
+  @include grid-child(3,7);
+  @extend p;
+  counter-reset: li; /* Initiate a counter */
+	margin-left: 0; /* Remove the default left margin */
+  margin-top: 37.5px;
+	padding-left: 0; /* Remove the default left padding */
+
+  li {
+    position: relative; /* Create a positioning context */
+    list-style: none; /* Disable the normal item numbering */
+	  margin: 0 0 10px 2em; /* Give each list item a left margin to make room for the numbers */
+	  padding-bottom: 11.25px; /* Add some spacing around the content */
+
+    &:before {
+      content:counter(li); /* Use the counter as content */
+    	counter-increment:li; /* Increment the counter by 1 */
+    	/* Position and style the number */
+    	position: absolute;
+    	top: -2px;
+    	left: -2em;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	box-sizing: border-box;
+    	width: 2em;
+    	/* Some space between the number and the content in browsers that support
+    	   generated content but not positioning it (Camino 2 is one example) */
+    	margin-right: 8px;
+    	padding: 4px;
+    	text-align:center;
+    }
+  }
 }
