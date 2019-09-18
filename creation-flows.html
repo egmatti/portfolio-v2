@@ -65,8 +65,8 @@ CREATION FLOWS PROJECT PAGE
       <span class="project-role__description">UX Designer</span>
     </div>
     <div class="project-section-text">
-      <span class="section-name">Background</span>
-      <h4 class="section-title">The most popular feature with<br/>the least popular workflow</h4>
+      <span class="project-section-name">Background</span>
+      <h4 class="project-section-title">The most popular feature with<br/>the least popular workflow</h4>
       <p>As an early-stage startup that was still in the process of staking out its position within the product management and customer success space, my former company UserIQ initially focused on developing three widely different feature sets in an effort to satisfy the largest number of new and existing users. The most popular and reliable of these three feature sets were in-app engagements—pop-up announcements, guided tours, surveys, and info bars—that other SaaS companies could use within their products to present information to or gather feedback from their users.</p>
     </div>
     <figure class="project-image--medium-width">
@@ -87,12 +87,12 @@ CREATION FLOWS PROJECT PAGE
 
   <section class="project-section process-section">
     <div class="project-section-text">
-      <span class="section-name">Process</span>
-      <h4 class="section-title">Creating a more intuitive flow based on<br/>patterns our customers were already <br/>familiar with</h4>
+      <span class="project-section-name">Process</span>
+      <h4 class="project-section-title">Creating a more intuitive flow based on<br/>patterns our customers were already <br/>familiar with</h4>
     </div>
 
     <div class="project-subsection-text project-subsection-one">
-      <h6 class="subsection-name">Defining the Problem & Research</h6>
+      <h6 class="project-subsection-name">Defining the Problem & Research</h6>
       <p>In order for me to better understand the problem, JD spent some time at the beginning of the project pointing out to me what he knew were the biggest issues within the Create Theme flow based on feedback he had received from the CS team. Two of the things that stood out were the scrolling tab bar at the top of the “Edit" panel that allowed the user to switch to the inputs and preview for a different campaign type as well as the placement of the custom CSS editor, which was currently hidden behind a misleading toggle below the save button.</p>
     </div>
     <figure class="project-image--full-width">
@@ -114,7 +114,7 @@ CREATION FLOWS PROJECT PAGE
     </figure>
 
     <div class="project-subsection-text project-subsection-two">
-      <h6 class="subsection-name">Sketches</h6>
+      <h6 class="project-subsection-name">Sketches</h6>
       <p>Once I began sketching as many viable solutions to the problem that I could think of, I realized that the biggest challenge to redesigning the Create Theme flow was going to be figuring out the best way for users to switch to a variety of different views on the same screen. They needed to be able to:</p>
       <ol>
         <li>Switch between the WYSIWYG inputs for different campaign types within the “Edit” panel</li>
@@ -134,16 +134,57 @@ CREATION FLOWS PROJECT PAGE
     </figure>
 
     <div class="project-subsection-text project-subsection-three">
-      <h6 class="subsection-name">Mockups, Prototypes, & User Testing</h6>
+      <h6 class="project-subsection-name">Mockups, Prototypes, & User Testing</h6>
       <p>After thinking about the pros and cons for each of the sketches, I was able to narrow down the number of viable options to just two concepts, which I converted into mockups and later prototypes. The key difference between the two concepts was that one concept had an additional tab in the tab bar for “Theme CSS” that would allow the user to switch to viewing the custom CSS editor for all campaign types and the other had a button group within the “Edit” panel that would allow the user to switch between viewing the WYSIWYG inputs for that campaign type and the custom CSS editor, which still applied to all campaign types.</p>
     </div>
-
+    <figure class="project-image--full-width">
+      <h6>New Create Theme Flow—Tab Option</h6>
+      <div class="two-image-layout">
+        <img src="img/projects/creation-flows/create-theme-mockups-tab-edit.png" alt="The Edit view of the new tabbed Create Theme flow concept">
+        <img src="img/projects/creation-flows/create-theme-mockups-tab-css.png" alt="The Custom CSS view of the new tabbed Create Theme flow concept">
+      </div>
+      <h6>New Create Theme Flow—Toggle Option</h6>
+      <div class="two-image-layout">
+        <img src="img/projects/creation-flows/create-theme-mockups-toggle-edit.png" alt="The Edit view of the new toggle Create Theme flow concept">
+        <img src="img/projects/creation-flows/create-theme-mockups-toggle-css.png" alt="The Custom CSS view of the new toggle Create Theme flow concept">
+      </div>
+    </figure>
+    <div class="project-subsection-text">
+      <p>Our uncertainty about users’ mental models was the reason for the difference between these two concepts. JD and I had learned from the engineering team that any custom CSS that was added to the theme would apply to all campaign types within the theme rather than to specific campaign types, so we wondered whether it would make more sense to users if the custom CSS editor were in its own tab rather than in the “Edit” panel. We also wondered, however, if users would be more likely to miss the custom CSS editor if it were placed within the last tab on the tab bar.</p>
+      <p>From a few hallway tests that we conducted with our coworkers who weren’t on the product team, it became clear that the custom CSS editor was harder to find when it was placed within the tab bar. It also became clear that users didn’t care that much whether or not the custom CSS for different campaign types was linked, alleviating any concerns that we had about confusing mental models.</p>
+    </div>
   </section>
 
+  <section class="project-section solution-section">
+    <div class="project-section-text">
+      <span class="project-section-name">Solution</span>
+      <h4 class="project-section-title">Applying new patterns to improve overall<br/>user experience</h4>
+      <p>After making one final update to the mockups, we had landed on a solution that we felt confident in and that our engineering team was able to release following a three week sprint cycle.</p>
+    </div>
+    <figure class="project-image--full-width">
+      <div class="two-image-layout">
+        <img src="img/projects/creation-flows/create-theme-mockups-final-edit.png" alt="The Edit view of the final mockups for the new Create Theme flow">
+        <img src="img/projects/creation-flows/create-theme-mockups-final-css.png" alt="The Custom CSS view of the final mockups for the new Create Theme flow">
+      </div>
+      <figcaption>The final mockups for the new Create Theme flow.</figcaption>
+    </figure>
+    <div class="project-section-text">
+      <p>Within another few weeks, however, our Director of Software Engineering told our product team that the latest releases, including the Create Theme one, had improved the user experience in certain areas of our app so much that it would be worthwhile for us to spend a few days in a war room session determining how we could apply some of the new UX patterns to other parts of our app. After some discussion, JD and I suggested applying the two-panel concept and accordion pattern from the Create Theme flow to the Create Campaign flow, reducing some of the gaps within the overall process for creating a campaign.</p>
+    </div>
+    <figure class="project-image--full-width">
+      <div class="two-image-layout">
+        <img src="img/projects/creation-flows/create-campaign-wireframes-setup.png" alt="The Tour Setup step of the wireframes JD put together for the new Create Campaign flow">
+        <img src="img/projects/creation-flows/create-campaign-wireframes-steps.png" alt="The Tour Steps step of the wireframes JD put together for the new Create Campaign flow">
+      </div>
+      <figcaption>The wireframes JD put together for the new Create Campaign flow.</figcaption>
+    </figure>
+    <div class="project-section-text">
+      <p>Although there was room for future improvements, we had found a way to reduce the number of usability issues within the Create Theme and Create Campaign flows within a short period of time, as evidenced by a drop in the number of Zendesk tickets that our CS team received around creating themes and campaigns. We had also done it without disrupting either the back-end of our application or our users’ workflows, making both redesigns a success for our company and our customers.</p>
+    </div>
+  </section>
 
-
-  <!-- <section class="work-section">
-    <h3 class="section-title">Work</h3>
+  <section class="work-section">
+    <h3 class="section-title">More Work</h3>
     <div class="projects-grid">
       <a href="creation-flows.html"><div class="project" id="project-one">
         <div class="project-text">
@@ -208,7 +249,7 @@ CREATION FLOWS PROJECT PAGE
         <a></a>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

@@ -36,6 +36,10 @@
 
   h6 {
     margin-bottom: 45px;
+
+    &:not(:first-of-type) {
+      margin-top: 56.25px;
+    }
   }
 
   figcaption {
