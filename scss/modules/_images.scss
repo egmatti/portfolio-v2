@@ -4,19 +4,20 @@
 
 .project-page .project-image--medium-width {
   @include grid-parent();
-  margin: 90px 0;
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin: 67.5px 0;
 
   img {
     @include box-shadow();
-    @include grid-child(2,8);
+    @include grid-child(3,9);
     display: block;
-    max-width: 1080px;
+    max-width: 900px;
     object-fit: contain;
     width: 100%;
   }
 
   figcaption {
-    @include grid-child(3,7);
+    @include grid-child(3,9);
     @extend p;
     display: block;
     font-size: 14px;
@@ -30,7 +31,7 @@
   box-sizing: border-box;
   height: auto;
   margin: 90px 0;
-  padding: 67.5px 45px 56.25px 45px;
+  padding: 67.5px 180px 56.25px 180px;
   width: 100%;
 
   h6 {
@@ -58,7 +59,7 @@
 
   @include m(comments) {
     object-fit: contain;
-    width: 35%;
+    width: 35.648%;
   }
 }
 
@@ -69,6 +70,6 @@
   img {
     @include box-shadow();
     object-fit: contain;
-    width: 48%;
+    width: 46.875%;
   }
 }
