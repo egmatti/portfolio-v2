@@ -67,6 +67,17 @@
   }
 }
 
+.project-page .one-image-layout {
+  @include flexbox($align: flex-start);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+  }
+}
+
 .project-page .two-image-layout {
   @include flexbox($align: flex-start, $justify: space-between);
   width: 100%;
@@ -75,5 +86,46 @@
     @include box-shadow();
     object-fit: contain;
     width: 46.875%;
+  }
+}
+
+.project-page .three-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 30.55%;
+  }
+}
+
+.project-page .two-column-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  @include e(column) {
+    height: auto;
+    width: 45.83%;
+  }
+}
+
+.job-story {
+  margin-bottom: 33.75px;
+
+  &:last-of-type {
+    margin-bottom: 11.25px;
+  }
+
+  span {
+    display: block;
+    font-family: $font-bold;
+    font-size: 14px;
+    margin-bottom: 7.5px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
   }
 }

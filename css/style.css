@@ -582,6 +582,18 @@ a {
     object-fit: contain;
     width: 35.648%; }
 
+.project-page .one-image-layout {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .project-page .one-image-layout img {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    object-fit: contain;
+    width: 46.875%; }
+
 .project-page .two-image-layout {
   align-items: flex-start;
   display: flex;
@@ -593,6 +605,40 @@ a {
     box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
     object-fit: contain;
     width: 46.875%; }
+
+.project-page .three-image-layout {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .project-page .three-image-layout img {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    object-fit: contain;
+    width: 30.55%; }
+
+.project-page .two-column-layout {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .project-page .two-column-layout__column {
+    height: auto;
+    width: 45.83%; }
+
+.job-story {
+  margin-bottom: 33.75px; }
+  .job-story:last-of-type {
+    margin-bottom: 11.25px; }
+  .job-story span {
+    display: block;
+    font-family: "Metropolis Bold", Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 7.5px; }
+  .job-story p, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .project-image--full-width figcaption, .project-page .project-image--full-width .job-story figcaption, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol {
+    font-size: 14px;
+    line-height: 21px; }
 
 blockquote {
   display: -ms-grid;
@@ -1270,5 +1316,17 @@ footer {
 
 #creation-flows-page blockquote span {
   color: #E84855; }
+
+#campaign-results-page .hero-background {
+  background: -moz-linear-gradient(-45deg, #4357AD 0%, #438BB1 100%);
+  background: -webkit-linear-gradient(-45deg, #4357AD 0%, #438BB1 100%);
+  background: linear-gradient(135deg, #4357AD 0%, #438BB1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
+
+#campaign-results-page .project-role__label {
+  color: #4357AD; }
+
+#campaign-results-page blockquote span {
+  color: #4357AD; }
 
 /*# sourceMappingURL=style.css.map */
