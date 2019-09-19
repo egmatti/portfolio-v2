@@ -100,6 +100,52 @@
   }
 }
 
+.project-page .four-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between, $wrap: wrap);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+
+    &:not(:nth-of-type(1)) {
+      margin-top: 45px;
+    }
+
+    &:not(:nth-of-type(2)) {
+      margin-top: 45px;
+    }
+  }
+}
+
+.project-page .six-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between, $wrap: wrap);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+
+    &:nth-of-type(3) {
+      margin-top: 45px;
+    }
+
+    &:nth-of-type(4) {
+      margin-top: 45px;
+    }
+
+    &:nth-of-type(5) {
+      margin-top: 45px;
+    }
+
+    &:nth-of-type(6) {
+      margin-top: 45px;
+    }
+  }
+}
+
 .project-page .two-column-layout {
   @include flexbox($align: flex-start, $justify: space-between);
   width: 100%;
@@ -107,6 +153,16 @@
   @include e(column) {
     height: auto;
     width: 45.83%;
+  }
+}
+
+.project-page .three-column-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  @include e(column) {
+    height: auto;
+    width: auto;
   }
 }
 
@@ -127,5 +183,73 @@
   p {
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+.approach {
+  width: 100%;
+
+  span {
+    display: block;
+    font-family: $font-bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    @extend p;
+    font-size: 14px;
+    list-style: none;
+    margin: 0 0 0 1.5em;
+    padding-bottom: 4.85px;
+    position: relative;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    &:before {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      content:'•';
+      left: -2em;
+      margin-right: 10px;
+      padding: 4px;
+      position: absolute;
+      text-align:center;
+      top: -4.75px;
+      width: 2em;
+    }
+
+    ul li {
+      &:first-of-type {
+        padding-top: 4.85px;
+      }
+
+      &:before {
+        content:'-';
+      }
+    }
+  }
+}
+
+.column--concept-model {
+  width: auto !important;
+}
+
+.concept-model {
+  width: 100%;
+
+  span {
+    display: block;
+    font-family: $font-bold;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  img {
+    height: 300px;
+    object-fit: contain;
   }
 }

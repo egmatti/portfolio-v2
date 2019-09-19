@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Metropolis Black";
   src: url("../fonts/Metropolis-Black.eot");
@@ -480,7 +481,7 @@ h6 {
   font-size: 21px;
   line-height: 28px; }
 
-p, .project-page .project-image--medium-width figcaption, .project-page .project-image--full-width figcaption, .project-page .project-role__description, .project-page .project-subsection-text ol {
+p, .project-page .project-image--medium-width figcaption, .project-page .project-image--full-width figcaption, .approach ul li, .project-page .project-role__description, .project-page .project-subsection-text ol {
   color: #484848;
   font-family: "Metropolis Regular", Helvetica, sans-serif;
   font-size: 18px;
@@ -618,6 +619,44 @@ a {
     object-fit: contain;
     width: 30.55%; }
 
+.project-page .four-image-layout {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+  .project-page .four-image-layout img {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    object-fit: contain;
+    width: 46.875%; }
+    .project-page .four-image-layout img:not(:nth-of-type(1)) {
+      margin-top: 45px; }
+    .project-page .four-image-layout img:not(:nth-of-type(2)) {
+      margin-top: 45px; }
+
+.project-page .six-image-layout {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+  .project-page .six-image-layout img {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+    object-fit: contain;
+    width: 46.875%; }
+    .project-page .six-image-layout img:nth-of-type(3) {
+      margin-top: 45px; }
+    .project-page .six-image-layout img:nth-of-type(4) {
+      margin-top: 45px; }
+    .project-page .six-image-layout img:nth-of-type(5) {
+      margin-top: 45px; }
+    .project-page .six-image-layout img:nth-of-type(6) {
+      margin-top: 45px; }
+
 .project-page .two-column-layout {
   align-items: flex-start;
   display: flex;
@@ -626,6 +665,15 @@ a {
   .project-page .two-column-layout__column {
     height: auto;
     width: 45.83%; }
+
+.project-page .three-column-layout {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .project-page .three-column-layout__column {
+    height: auto;
+    width: auto; }
 
 .job-story {
   margin-bottom: 33.75px; }
@@ -636,9 +684,55 @@ a {
     font-family: "Metropolis Bold", Helvetica, sans-serif;
     font-size: 14px;
     margin-bottom: 7.5px; }
-  .job-story p, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .project-image--full-width figcaption, .project-page .project-image--full-width .job-story figcaption, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol {
+  .job-story p, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .project-image--full-width figcaption, .project-page .project-image--full-width .job-story figcaption, .job-story .approach ul li, .approach ul .job-story li, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol {
     font-size: 14px;
     line-height: 21px; }
+
+.approach {
+  width: 100%; }
+  .approach span {
+    display: block;
+    font-family: "Metropolis Bold", Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px; }
+  .approach ul li {
+    font-size: 14px;
+    list-style: none;
+    margin: 0 0 0 1.5em;
+    padding-bottom: 4.85px;
+    position: relative; }
+    .approach ul li:last-of-type {
+      padding-bottom: 0; }
+    .approach ul li:before {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      content: '•';
+      left: -2em;
+      margin-right: 10px;
+      padding: 4px;
+      position: absolute;
+      text-align: center;
+      top: -4.75px;
+      width: 2em; }
+    .approach ul li ul li:first-of-type {
+      padding-top: 4.85px; }
+    .approach ul li ul li:before {
+      content: '-'; }
+
+.column--concept-model {
+  width: auto !important; }
+
+.concept-model {
+  width: 100%; }
+  .concept-model span {
+    display: block;
+    font-family: "Metropolis Bold", Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 45px; }
+  .concept-model img {
+    height: 300px;
+    object-fit: contain; }
 
 blockquote {
   display: -ms-grid;
@@ -655,7 +749,7 @@ blockquote {
     content: url("../img/icons/quotation-mark.svg");
     margin-top: -10px;
     text-align: center; }
-  blockquote p, blockquote .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width blockquote figcaption, blockquote .project-page .project-image--full-width figcaption, .project-page .project-image--full-width blockquote figcaption, blockquote .project-page .project-role__description, .project-page blockquote .project-role__description, blockquote .project-page .project-subsection-text ol, .project-page .project-subsection-text blockquote ol {
+  blockquote p, blockquote .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width blockquote figcaption, blockquote .project-page .project-image--full-width figcaption, .project-page .project-image--full-width blockquote figcaption, blockquote .approach ul li, .approach ul blockquote li, blockquote .project-page .project-role__description, .project-page blockquote .project-role__description, blockquote .project-page .project-subsection-text ol, .project-page .project-subsection-text blockquote ol {
     -ms-grid-column: 4;
     -ms-grid-column-span: 4;
     grid-column: 4/8;
@@ -1090,7 +1184,7 @@ footer {
     grid-column: 3/8;
     color: #ffffff;
     margin: 0; }
-  #home-page .hero-text p, #home-page .hero-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #home-page .hero-text figcaption, #home-page .hero-text .project-page .project-image--full-width figcaption, .project-page .project-image--full-width #home-page .hero-text figcaption, #home-page .hero-text .project-page .project-role__description, .project-page #home-page .hero-text .project-role__description, #home-page .hero-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #home-page .hero-text ol {
+  #home-page .hero-text p, #home-page .hero-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #home-page .hero-text figcaption, #home-page .hero-text .project-page .project-image--full-width figcaption, .project-page .project-image--full-width #home-page .hero-text figcaption, #home-page .hero-text .approach ul li, .approach ul #home-page .hero-text li, #home-page .hero-text .project-page .project-role__description, .project-page #home-page .hero-text .project-role__description, #home-page .hero-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #home-page .hero-text ol {
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-column: 5/8;
@@ -1198,11 +1292,11 @@ footer {
   grid-column: 2/7;
   margin: 33.75px 0 45px 0; }
 
-.project-page .project-section-text p, .project-page .project-section-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-section-text figcaption, .project-page .project-section-text .project-image--full-width figcaption, .project-page .project-image--full-width .project-section-text figcaption, .project-page .project-section-text .project-role__description, .project-page .project-section-text .project-subsection-text ol, .project-page .project-subsection-text .project-section-text ol {
+.project-page .project-section-text p, .project-page .project-section-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-section-text figcaption, .project-page .project-section-text .project-image--full-width figcaption, .project-page .project-image--full-width .project-section-text figcaption, .project-page .project-section-text .approach ul li, .approach ul .project-page .project-section-text li, .project-page .project-section-text .project-role__description, .project-page .project-section-text .project-subsection-text ol, .project-page .project-subsection-text .project-section-text ol {
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3/7; }
-  .project-page .project-section-text p:not(:first-of-type), .project-page .project-section-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .project-image--full-width figcaption:not(:first-of-type), .project-page .project-image--full-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .project-role__description:not(:first-of-type), .project-page .project-section-text .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-section-text ol:not(:first-of-type) {
+  .project-page .project-section-text p:not(:first-of-type), .project-page .project-section-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .project-image--full-width figcaption:not(:first-of-type), .project-page .project-image--full-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-section-text li:not(:first-of-type), .project-page .project-section-text .project-role__description:not(:first-of-type), .project-page .project-section-text .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-section-text ol:not(:first-of-type) {
     margin-top: 37.5px; }
 
 .project-page .project-role {
@@ -1269,11 +1363,11 @@ footer {
   grid-column: 3/7;
   margin-bottom: 33.75px; }
 
-.project-page .project-subsection-text p, .project-page .project-subsection-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-subsection-text figcaption, .project-page .project-subsection-text .project-image--full-width figcaption, .project-page .project-image--full-width .project-subsection-text figcaption, .project-page .project-subsection-text .project-role__description, .project-page .project-subsection-text ol {
+.project-page .project-subsection-text p, .project-page .project-subsection-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-subsection-text figcaption, .project-page .project-subsection-text .project-image--full-width figcaption, .project-page .project-image--full-width .project-subsection-text figcaption, .project-page .project-subsection-text .approach ul li, .approach ul .project-page .project-subsection-text li, .project-page .project-subsection-text .project-role__description, .project-page .project-subsection-text ol {
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3/7; }
-  .project-page .project-subsection-text p:not(:first-of-type), .project-page .project-subsection-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .project-image--full-width figcaption:not(:first-of-type), .project-page .project-image--full-width .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .project-role__description:not(:first-of-type), .project-page .project-subsection-text ol:not(:first-of-type) {
+  .project-page .project-subsection-text p:not(:first-of-type), .project-page .project-subsection-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .project-image--full-width figcaption:not(:first-of-type), .project-page .project-image--full-width .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-subsection-text li:not(:first-of-type), .project-page .project-subsection-text .project-role__description:not(:first-of-type), .project-page .project-subsection-text ol:not(:first-of-type) {
     margin-top: 37.5px; }
 
 .project-page .project-subsection-text ol {
