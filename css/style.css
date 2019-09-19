@@ -1329,4 +1329,16 @@ footer {
 #campaign-results-page blockquote span {
   color: #4357AD; }
 
+#tasks-and-playbooks-page .hero-background {
+  background: -moz-linear-gradient(-45deg, #963484 0%, #966888 100%);
+  background: -webkit-linear-gradient(-45deg, #963484 0%, #966888 100%);
+  background: linear-gradient(135deg, #963484 0%, #966888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
+
+#tasks-and-playbooks-page .project-role__label {
+  color: #963484; }
+
+#tasks-and-playbooks-page blockquote span {
+  color: #963484; }
+
 /*# sourceMappingURL=style.css.map */
